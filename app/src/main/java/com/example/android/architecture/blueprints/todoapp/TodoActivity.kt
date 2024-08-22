@@ -19,6 +19,7 @@ package com.example.android.architecture.blueprints.todoapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material.MaterialTheme
 import com.google.accompanist.appcompattheme.AppCompatTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -31,7 +32,7 @@ class TodoActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            AppCompatTheme {
+            MaterialTheme  {
                 TodoNavGraph()
             }
         }
